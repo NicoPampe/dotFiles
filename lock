@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd ~/.i3/Pictures/
+declare -a arr=(*.png)
+
+RANGE=${#arr[@]}
+index=$RANDOM
+let "index %= $RANGE"
+
+i3lock -i ~/.i3/Pictures/${arr[$index]}
