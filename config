@@ -184,3 +184,7 @@ bindsym Mod1+p exec --no-startup-id ~/.i3/lock
 
 # git commands
 # bindsym
+
+bindcode Mod1+ctrl+53 exec amixer -q set Master 2dB+ unmute
+bindcode Mod1+crtl+54 exec amixer -q set Master 2dB- unmute
+# bindsym XF86AudioMute exec amixer -q set Master toggle
