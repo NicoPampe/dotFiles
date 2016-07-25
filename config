@@ -169,10 +169,11 @@ bar {
 #	These start up different applications
 #######################################################################
 
-set $application_start "sublimt[t]ext googl[c]hrome [s]optify"
+set $application_start "sublimt[t]ext googl[c]hrome [s]optify [i]nkscape"
 mode $application_start {
 	bindsym c exec /usr/bin/google-chrome; mode "default"
 	bindsym t exec exec ~/Desktop/sublime_text_3/sublime_text; mode "default"
+	bindsym i exec /usr/bin/inkscape; mode "default"
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
